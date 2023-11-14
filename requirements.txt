@@ -1,0 +1,16 @@
+﻿asgiref
+asttokens
+backcall
+blinker
+click
+colorama
+comm
+debugpy
+decorator
+Flask
+Flask-PyMongo
+pymongo
+gunicorn
+passlib
+python-dotenv
+bcrypt
