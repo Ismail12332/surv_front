@@ -18,7 +18,7 @@ def create_app():
 
     app = Flask(__name__, template_folder='templates')
     app.secret_key = "Jebn^$gdYGTHudjy%"
-    client = MongoClient("mongodb://localhost:27017")
+    client = MongoClient(os.getenv("MONGODB_URI"))
     app.db = client.my_database
     users_collection = app.db.users
     projects_collection = app.db.projects
